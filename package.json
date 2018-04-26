@@ -12,6 +12,7 @@
   "dependencies": {
     "dotenv": "^5.0.1",
     "request": "^2.80.0",
-    "ttn": "^2.1.0"
+    "ttn": "^2.1.0",
+    "express": "^4.16.1"
   }
 }
