@@ -3,7 +3,7 @@
 
 /* eslint-disable */
 require('dotenv').config()
-console.log(process.env)
+//console.log(process.env)
 
 var ttn = require("ttn");
 var http = require("http");
