@@ -24,7 +24,7 @@ ttn
       // body.value = payload.payload_fields
       // body.devID = payload.hardware_serial
       body = {
-        value: 10.123,
+        value: payload.payload_fields.temperature,
         unit: 'C',
         Device_id: 1
       }
