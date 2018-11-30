@@ -21,10 +21,17 @@ ttn
       console.log("Received uplink from ", devID);
       console.log("Program running");
 
-      body = payload.payload_fields
-      body.dev_eui = payload.hardware_serial
+      // body.value = payload.payload_fields
+      // body.devID = payload.hardware_serial
+      body = {
+        value: 10.123,
+        unit: 'C',
+        Device_id: 1
+      }
+
 
       console.log(JSON.stringify(body));
+
 
       var options = {
         url:
@@ -37,7 +44,10 @@ ttn
         if (error) {
           return console.error('upload failed:', error);
         }
-        console.log('Upload successful!');
+        // console.log('Upload successful!');
+        console.log(response.statusCode);
+        console.log(response.statusMessage);
+
       });
     });
   })
